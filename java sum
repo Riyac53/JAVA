@@ -1,0 +1,26 @@
+public class CalculateSumTest {
+    public static void main(String[] args) {
+        // Test array containing both positive and negative numbers
+        int[] numbers = {1, -2, 3, -4, 5};
+        
+        // Call the calculateSum method and store the result
+        int result = calculateSum(numbers);
+        
+        // Print the result to verify the output
+        System.out.println("The sum is: " + result); // Expected output: 3
+    }
+
+    /**
+     * Method to calculate the sum of an array of integers.
+     * 
+     * @param numbers Array of integers
+     * @return Sum of the integers in the array
+     */
+    public static int calculateSum(int[] numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+}
